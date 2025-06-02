@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+/* Grundläggande styling */
+.app {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Anpassa teckensnitt om designen kräver det */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.header {
+    background-color: #6200ee; /* Designfärg */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Profil- och eventsektioner */
+.profile-section, .events-section {
+    background-color: white;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Typografi */
+h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    color: #6200ee; /* Matcha rubriker med designen */
+    margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+.loading, .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.error {
+    color: red;
 }
